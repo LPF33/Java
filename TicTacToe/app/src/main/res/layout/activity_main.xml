@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#685555"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonClick"
+        android:text="Start the Game!"
+        android:textSize="24sp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid2"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_below="@+id/button"
+        android:layout_centerInParent="true"
+        app:columnCount="3"
+        app:rowCount="3" >
+
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@android:color/background_dark" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="#FFD7D7"
+            android:onClick="gameMove"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@android:color/background_dark" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@android:color/background_dark" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="7"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@android:color/background_dark" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@android:color/background_light" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid1"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_below="@+id/button"
+        android:layout_centerInParent="true"
+        app:columnCount="3"
+        app:rowCount="3">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="#FFD7D7"
+            android:onClick="gameMove"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="7"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="gameMove"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2" />
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</RelativeLayout>
